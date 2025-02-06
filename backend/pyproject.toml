@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 requires-python = ">=3.10,<4.0"
 dependencies = [
-    "fastapi[standard]<1.0.0,>=0.114.2",
+    "fastapi[standard]<1.0.0,>=0.115.5",
     "python-multipart<1.0.0,>=0.0.7",
     "email-validator<3.0.0.0,>=2.1.0.post1",
     "passlib[bcrypt]<2.0.0,>=1.7.4",
@@ -66,3 +66,7 @@ ignore = [
 [tool.ruff.lint.pyupgrade]
 # Preserve types, even if a file imports `from __future__ import annotations`.
 keep-runtime-typing = true
+
+[[tool.uv.index]]
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+default = true
